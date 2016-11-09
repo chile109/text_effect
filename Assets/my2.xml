@@ -1,0 +1,36 @@
+﻿<transforms>
+  <rotation id="1" name="momo">
+    <poem>曾經滄海難為水。</poem>
+    <url>https://i.imgur.com/kJpxzuE.jpg</url>
+  </rotation>
+
+  <rotation id="2" name="momo">
+
+    <poem>何當共剪西窗燭。</poem>
+    <url>http://twimg.edgesuite.net/images/ReNews/20150927/640_88c8fbb3b5b4734e636a76c78f34320e.jpg</url>
+  </rotation>
+
+  <rotation id="3" name="momo">
+
+    <poem>多情自古傷離別。</poem>
+    <url>http://horafriend.com/image/article/20456/21.jpg</url>
+  </rotation>
+
+  <rotation id="4" name="momo">
+
+    <poem>那人卻在，燈火闌珊處。</poem>
+    <url>http://attach.azureedge.net/newsimages/2015/09/25/344770.jpg</url>
+  </rotation>
+
+  <rotation id="5" name="momo">
+
+    <poem>簾卷西風，人比黃花瘦。</poem>
+    <url>http://simg314.magcasa.com/content_images/2015/11/04/173403/1446632104_2274.jpg</url>
+  </rotation>
+
+  <rotation id="6" name="momo">
+
+    <poem>才下眉頭，卻上心頭。</poem>
+    <url>https://i.ytimg.com/vi/--oO-HUbbpc/maxresdefault.jpg</url>
+  </rotation>
+</transforms>
