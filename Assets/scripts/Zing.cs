@@ -16,7 +16,7 @@ public class Zing : MonoBehaviour {
 
     void Update()
     {
-        QRCodeString = loadrext2.url;
+        QRCodeString = TextEffect.XmlManager.url;
         Color32[] color32 = useEncode(QRCodeString, encoded.width, encoded.height);//儲存產生的QR Code
         encoded.SetPixels32(color32);//設定要顯示的圖片像素
         encoded.Apply();//申請顯示圖片

@@ -29,8 +29,10 @@ namespace TextEffect
         protected override void mapBindings()
         {
             mediationBinder.Bind<TextEffectView>().To<HelloWorldMediator>();
+            injectionBinder.Bind<ISomeManager>().To<XmlManager>().ToSingleton();
 
             commandBinder.Bind<StartSignal>().To<loadTextCommand>().Once();
+            commandBinder.Bind<ShowXmlSignal>().To<ShowXMLCommand>().Pooled();
         }
     }
 }

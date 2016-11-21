@@ -11,13 +11,17 @@ namespace TextEffect
         private Text textComp;
         public float startDelay = 2f;
         public float typeDelay = 0.01f;
+
         public static bool typing = false;
+
         public static bool typtriger = false;
-        public Animator animat;
+        private Animator animat;
+       
 
         void Awake()
         {
             textComp = GetComponent<Text>();
+            animat = GameObject.Find("Canvas(Clone)").GetComponent<Animator>();
         }
 
         // Use this for initialization
@@ -28,9 +32,15 @@ namespace TextEffect
 
         }
 
-
-        public IEnumerator TypeIn()
+        void Update()
         {
+            if (typtriger)
+                StartCoroutine(TypeIn());
+        }
+
+        private IEnumerator TypeIn()
+        {
+            typtriger = false;
             animat.SetInteger("show_text", 0);
             yield return new WaitForSeconds(startDelay);
             for (int i = 0; i <= msg.Length; i++)
