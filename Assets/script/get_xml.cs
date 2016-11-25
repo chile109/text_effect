@@ -7,14 +7,15 @@ public class get_xml : MonoBehaviour {
     public static string url = "https://www.google.com.tw/";
     Text msg ;
     private int id = 0;
-
+    public string file = "/my2.xml";
+    public int xml_max;
     void Start()
     {
         msg = this.GetComponent<Text>();
 
-        int i = UnityEngine.Random.Range(1, 7);
+        int i = UnityEngine.Random.Range(1, xml_max + 1);
         id = i;
-        string filepath = Application.dataPath + @"/my2.xml";
+        string filepath = Application.dataPath + "/StreamingAssets" + file;
         if (File.Exists(filepath))
         {
             XmlDocument xmlDoc = new XmlDocument();
